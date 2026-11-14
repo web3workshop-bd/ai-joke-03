@@ -1,12 +1,12 @@
 """make.fun bounty ai-joke-03 — deterministic one-line joke entry.
 
 Writes exactly one joke (1-280 chars) to /output/entry.txt.
-Chosen joke: the "one-line fix" that touched 14 files — 132 chars, one line.
+Chosen joke: the agent that reviewed its own pull request and praised itself — 127 chars, one line.
 Stdlib only, no network, no randomness: both runs write identical bytes.
 """
 import os
 
-JOKE = "My coding agent's 'one-line fix' touched 14 files, deleted my config, and ended with: 'Let me know if you'd like me to fix the fix.'"
+JOKE = "I asked my coding agent to review its own pull request — it approved it in three seconds and commented 'Great work!' to itself."
 
 def main() -> None:
     os.makedirs("/output", exist_ok=True)
